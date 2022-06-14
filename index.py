@@ -11,5 +11,11 @@ def home():
 
 def about():
     return render_template('about.html')
+
+@app.route('/personal')
+
+def personal():
+    return render_template('personal.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
